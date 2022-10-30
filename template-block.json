@@ -1,0 +1,56 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "",
+    "title": "",
+    "description": "",
+    "style": "",
+	"editorStyle": "",
+    "category": "common",
+    "icon": "awards",
+    "keywords": [
+        "",
+        "",
+        ""
+    ],
+    "acf": {
+        "mode": "preview",
+        "renderTemplate": ""
+    },
+    "supports": {
+		"mode": false,
+        "align": ["wide", "full", "left", "center", "right"],
+		"alignWide": true,
+        "anchor": false,
+        "alignContent": false,
+        "color": {
+			"background": false,
+			"gradients": false,
+			"link": false,
+			"text": false
+		},
+        "alignText": false,
+        "spacing": {
+			"margin": false,
+			"padding": false
+		},
+        "typography": {
+			"fontSize": false,
+			"lineHeight": false
+		},
+        "fullHeight": false
+    },
+    "attributes": {
+        "variable": {
+            "type": "string",
+            "default": ""
+        }
+    },
+    "example": {
+        "attributes": {
+            "variable": {
+                "text": "Example"
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+  "name": "create-acf-block",
+  "description": "Scaffolds an ACF block based on block.json for WordPress Block Editor",
+  "version": "1.0.0",
+  "main": "create-block.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
+  "license": "ISC",
+  "bin": "create-block.js",
+  "dependencies": {},
+  "devDependencies": {
+    "prompts": "^2.4.2"
+  }
+}

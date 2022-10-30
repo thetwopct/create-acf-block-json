@@ -1,0 +1,52 @@
+<?php
+/**
+ * XYZ Block
+ *
+ * @package WordPress
+ *
+ * @param   array $block The block settings and attributes.
+ * @param   string $content The block inner HTML (empty).
+ * @param   bool $is_preview True during AJAX preview.
+ * @param   (int|string) $post_id The post ID this block is saved to.
+ */
+
+// UPDATE this name for block same as in register.
+$block_name = 'QWY';
+
+// Create full block name to use in classes.
+$block_name = 'wp-block-acf-' . $block_name;
+
+$background = ( empty( $block['backgroundColor'] ) ) ? '' : 'has-' . $block['backgroundColor'] . '-background-color';
+
+$has_background = $background ? 'has-background' : '';
+
+$font_size = ( empty( $block['fontSize'] ) ) ? '' : 'has-' . $block['fontSize'] . '-font-size';
+
+$align = ( empty( $block['align'] ) ) ? '' : 'align' . $block['align'];
+
+$align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
+
+$full_height = ( empty( $block['full_height'] ) ) ? '' : 'has-full-height';
+
+$additional_classes = $block['className'] ?? '';
+
+$classes = TTP_Utils::merge_classes(
+	array(
+		$block_name,
+		$background,
+		$has_background,
+		$font_size,
+		$align,
+		$align_text,
+		$full_height,
+		$additional_classes,
+	)
+);
+?>
+
+<div class="<?php echo esc_attr( $classes ); ?>">
+	<p>Welcome to your ACF block.</p>
+	<?php
+		echo '<InnerBlocks />';
+	?>
+</div>
