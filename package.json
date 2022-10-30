@@ -9,6 +9,10 @@
   "keywords": [],
   "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thetwopct/create-acf-block-json"
+  },
   "bin": "create-block.js",
   "dependencies": {},
   "devDependencies": {

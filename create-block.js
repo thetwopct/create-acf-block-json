@@ -133,7 +133,7 @@ if ( ! fs.existsSync( dir )) {
 			template.description        = response.description;
 			template.icon               = response.icon;
 			template.style              = 'file:./' + lowercaseName + '.css';
-			template.editorStyle              = '[ file:./' + lowercaseName + '.css, editor.css ]';
+			template.editorStyle        = '[ file:./' + lowercaseName + '.css, file:./editor.css ]';
 			template.acf.renderTemplate = lowercaseName + '.php';
 			let jsonContent             = JSON.stringify( template, null, "\t" );
 			let createJSON              = fs.createWriteStream( absolute + '/block.json' );
