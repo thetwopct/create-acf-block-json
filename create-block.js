@@ -73,7 +73,7 @@ if ( ! fs.existsSync( dir )) {
 
 	fs.writeFile(
 		absolute + '/' + lowercaseName + '.scss',
-		'.wp-block-acf-' + lowercaseName + '{}',
+		'@import "../../source/scss/core/variables";	@import "../../source/scss/core/extends";@import "../../source/scss/core/normalize";@import "../../source/scss/core/reset";.wp-block-acf-' + lowercaseName + '{}',
 		function (error) {
 			if (error) {
 				console.log( 'Whoops there has been an error. Delete the folder and start again.' );
