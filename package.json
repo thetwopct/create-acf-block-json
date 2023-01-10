@@ -18,7 +18,8 @@
     "files": [
         "/lib",
         "/bin",
-        "README.md"
+        "README.md",
+        "screenshot.gif"
     ],
     "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
     "license": "ISC",
