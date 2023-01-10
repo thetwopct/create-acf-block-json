@@ -21,8 +21,8 @@
         "type": "git",
         "url": "git://github.com/thetwopct/create-acf-block-json"
     },
-    "dependencies": {},
-    "devDependencies": {
-        "prompts": "^2.4.2"
-    }
+    "dependencies": {
+		"prompts": "^2.4.2"
+	},
+    "devDependencies": {}
 }
