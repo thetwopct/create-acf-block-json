@@ -1,6 +1,24 @@
 # Create ACF Block JSON
 
-Quickly create an a new WordPress Block that uses Advanced Custom Fields (ACF) and utilised block.json and block-specific CSS.
+> Quickly create a new [WordPress](https://wordpress.org) Block that uses [Advanced Custom Fields](https://www.advancedcustomfields.com) (ACF) and utilises block.json and block-specific CSS and PHP files.
+
+If you use ACF and make Gutenberg blocks, this simple utility should save you time scaffolding custom blocks.
+
+<img src="screenshot.gif" width="624">
+
+## Quick Start
+
+Install globally via npm:
+
+```sh
+npm install --global create-acf-block-json
+```
+
+then navigate to where you want your block to be (i.e. /theme/blocks/), and run:
+
+```
+$ create-acf-block-json
+```
 
 ## What does Create ACF Block JSON do
 
@@ -11,11 +29,10 @@ It will generate:
 - Folder - containg folder for your block.
 - block.json - prefilled with block information.
 - PHP file - setup with basic information, classes and innerblocks.
-- SCSS file - useful if you use a compiler to output CSS files.
-- CSS file - to edit CSS or be overwritten by your processed SCSS.
-- editor.css - dedicated editor styles for block.
+- SCSS files - for the frontend and editor. SCSS is useful if you use a compiler to output CSS files.
+- CSS file - for the frontend and editor. To write straight CSS or be overwritten by your processed SCSS.
 
-The script handles generating a unique class for your block which is then referenced in each file.
+The script handles generating a unique class (.wp-block-namespace-name) for your block which is then referenced in each file.
 
 ## Customisation Options
 
