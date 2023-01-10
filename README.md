@@ -1,6 +1,6 @@
 # Create ACF Block JSON
 
-Quickly create an ACF Block that utilises block.json
+Quickly create an a new WordPress Block that uses Advanced Custom Fields (ACF) and utilised block.json and block-specific CSS.
 
 ## What does Create ACF Block JSON do
 
