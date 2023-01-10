@@ -30,7 +30,7 @@ The script will then generate all required files. From there, you can edit, dele
 
 ## Install Create ACF Block
 
-1. Using terminal or another CLI, download from npm and install as a global package - `npm -i create-acf-block-json -g `
+1. Using terminal or another CLI, download from npm and install as a global package - `npm install -g create-acf-block-json`
 2. Using terminal or another CLI, navigate to your WordPress theme folder where you want all of your blocks (we use /wp-content/themes/my-theme/blocks/)
 3. Run `create-acf-block-json` and follow prompts.
 
