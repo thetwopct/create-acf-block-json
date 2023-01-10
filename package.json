@@ -12,9 +12,14 @@
         "wordpress",
         "gutenberg"
     ],
-	"scripts": {
-		"test": "echo \"No test specified\""
-	},
+    "scripts": {
+        "test": "echo \"No test specified\""
+    },
+    "files": [
+        "/lib",
+        "/bin",
+        "README.md"
+    ],
     "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
     "license": "ISC",
     "repository": {
@@ -22,7 +27,7 @@
         "url": "git://github.com/thetwopct/create-acf-block-json"
     },
     "dependencies": {
-		"prompts": "^2.4.2"
-	},
+        "prompts": "^2.4.2"
+    },
     "devDependencies": {}
 }
