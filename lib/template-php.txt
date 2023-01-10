@@ -13,7 +13,7 @@
 // Block Name (sluggified).
 $block_name = 'QWY';
 
-$namespace = 'DX9S'
+$namespace = 'DX9S';
 
 // Create full block name to use in classes.
 $block_name = 'wp-block-' . $namespace . '-' . $block_name;
@@ -33,7 +33,7 @@ $full_height = ( empty( $block['full_height'] ) ) ? '' : 'has-full-height';
 
 $additional_classes = $block['className'] ?? '';
 
-$all_classes = [
+$all_classes = array(
 	$block_name,
 	$background,
 	$has_background,
@@ -43,7 +43,7 @@ $all_classes = [
 	$full_height,
 	$additional_classes,
 	'', // You can add more classes, one per line.
-	];
+);
 
 $classes = implode( ' ', $all_classes );
 ?>
