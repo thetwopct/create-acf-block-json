@@ -6,6 +6,7 @@
     "description": "",
     "style": "",
 	"editorStyle": "",
+	"editorScript" : [],
     "category": "common",
     "icon": "awards",
     "keywords": [
@@ -13,7 +14,7 @@
         "",
         ""
     ],
-    "acf": {
+	"acf": {
         "mode": "preview",
         "renderTemplate": ""
     },
@@ -21,15 +22,15 @@
 		"mode": false,
         "align": ["wide", "full", "left", "center", "right"],
 		"alignWide": true,
-        "anchor": false,
         "alignContent": false,
+		"alignText": false,
+        "anchor": false,
         "color": {
 			"background": false,
 			"gradients": false,
 			"link": false,
 			"text": false
 		},
-        "alignText": false,
         "spacing": {
 			"margin": false,
 			"padding": false

@@ -1,21 +1,25 @@
 {
-  "name": "create-acf-block",
-  "description": "Scaffolds an ACF block based on block.json for WordPress Block Editor",
-  "version": "1.0.0",
-  "main": "create-block.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
-  "license": "ISC",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/thetwopct/create-acf-block-json"
-  },
-  "bin": "create-block.js",
-  "dependencies": {},
-  "devDependencies": {
-    "prompts": "^2.4.2"
-  }
+    "name": "create-acf-block-json",
+    "description": "Scaffolds an ACF block based on block.json for WordPress Block Editor",
+    "version": "1.0.0",
+    "main": "./lib/create-acf-block-json.js",
+    "bin": {
+        "create-acf-block-json": "./bin/index.js"
+    },
+    "keywords": [
+        "acf",
+        "advanced custom fields",
+        "wordpress",
+        "gutenberg"
+    ],
+    "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
+    "license": "ISC",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/thetwopct/create-acf-block-json"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "prompts": "^2.4.2"
+    }
 }
