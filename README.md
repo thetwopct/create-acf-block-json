@@ -27,12 +27,14 @@ Create ACF Block JSON is an npm package command line program that will create a 
 It will generate:
 
 - Folder - containg folder for your block.
-- block.json - prefilled with block information.
+- block.json - prefilled with common block information and default values.
 - PHP file - setup with basic information, classes and innerblocks.
 - SCSS files - for the frontend and editor. SCSS is useful if you use a compiler to output CSS files.
 - CSS file - for the frontend and editor. To write straight CSS or be overwritten by your processed SCSS.
 
 The script handles generating a unique class (.wp-block-namespace-name) for your block which is then referenced in each file.
+
+This script doesn't handle registration of the block - we recommend directory scanning methods to auto load blocks without registering each one. This method is outlined by [Bill Erickson](https://www.billerickson.net/building-acf-blocks-with-block-json/#advanced-usage), but there are [other examples](https://github.com/cncf/cncf.io/blob/0233ccfa1fb24d46ce119049b010a18a0e3d91d3/web/wp-content/themes/cncf-twenty-two/includes/acf.php#L19) online. But if you need an easier solution to register an ACF block, [follow this guide](https://www.advancedcustomfields.com/resources/how-to-upgrade-a-legacy-block-to-block-json-with-acf-6/). FYI, many guides are out of date, make sure you use guides released after 28th September 2022 (when ACF 6.0 was released) which will properly use block.json.
 
 ## Customisation Options
 
@@ -41,7 +43,7 @@ When you run `create-acf-block-json` you are asked a few questions before your b
 - Namespace: Specify a namespace for the block (defaults to `acf`)
 - Name: Give your block a name, i.e. "My Cool Block" (required)
 - Description: Describe the functionality of your block so editors and users can find it easily (optional)
-- Icon: The icon for your block - use any Dashicons name https://developer.wordpress.org/resource/dashicons/ (defaults to `dashboard`)
+- Icon: The icon for your block - use any [Dashicons](https://developer.wordpress.org/resource/dashicons/) name (defaults to icon `dashicons-star-filled`)
 
 The script will then generate all required files. From there, you can edit, delete, remove the files as you wish.
 
@@ -53,4 +55,4 @@ The script will then generate all required files. From there, you can edit, dele
 
 ## TODO:
 
-- Use random icon from dashicons
+- Use random icon from dashicons instead of always `dashicons-star-filled`
