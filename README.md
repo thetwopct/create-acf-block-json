@@ -4,7 +4,7 @@
 
 If you use ACF and make Gutenberg blocks, this simple utility should save you time scaffolding custom blocks.
 
-<img src="screenshot.gif" width="624">
+<img src="screenshot.gif" width="630">
 
 ## Quick Start
 
