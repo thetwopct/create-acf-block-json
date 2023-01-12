@@ -53,6 +53,10 @@ The script will then generate all required files. From there, you can edit, dele
 2. Using terminal or another CLI, navigate to your WordPress theme folder where you want all of your blocks (we use /wp-content/themes/my-theme/blocks/)
 3. Run `create-acf-block-json` and follow prompts.
 
+## Update Create ACF Block
+
+To update to the latest version you can just run the install command again - `npm install -g create-acf-block-json`
+
 ## Feedback and issues
 
 Please open an issue in the [GitHub repo](https://github.com/thetwopct/create-acf-block-json/issues). Thanks.
