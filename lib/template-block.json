@@ -24,7 +24,7 @@
 		"alignWide": true,
         "alignContent": false,
 		"alignText": false,
-        "anchor": false,
+        "anchor": true,
         "color": {
 			"background": false,
 			"gradients": false,
@@ -47,11 +47,5 @@
             "default": ""
         }
     },
-    "example": {
-        "attributes": {
-            "variable": {
-                "text": "Example"
-            }
-        }
-    }
+    "example": {}
 }
