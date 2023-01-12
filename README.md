@@ -43,7 +43,7 @@ When you run `create-acf-block-json` you are asked a few questions before your b
 - Namespace: Specify a namespace for the block (defaults to `acf`)
 - Name: Give your block a name, i.e. "My Cool Block" (required)
 - Description: Describe the functionality of your block so editors and users can find it easily (optional)
-- Icon: The icon for your block - use any [Dashicons](https://developer.wordpress.org/resource/dashicons/) name (defaults to icon `dashicons-star-filled`)
+- Icon: The icon for your block - use any [Dashicons](https://developer.wordpress.org/resource/dashicons/) name (defaults to icon `star-filled`). Note, when copying the name of the Dashicon you must remove the prefix `dashicons-`, for example: `dashicons-smiley` should be written as `smiley`.
 
 The script will then generate all required files. From there, you can edit, delete, remove the files as you wish.
 
@@ -53,6 +53,6 @@ The script will then generate all required files. From there, you can edit, dele
 2. Using terminal or another CLI, navigate to your WordPress theme folder where you want all of your blocks (we use /wp-content/themes/my-theme/blocks/)
 3. Run `create-acf-block-json` and follow prompts.
 
-## TODO:
+## Feedback and issues
 
-- Use random icon from dashicons instead of always `dashicons-star-filled`
+Please open an issue in the [GitHub repo](https://github.com/thetwopct/create-acf-block-json/issues). Thanks.
