@@ -21,6 +21,9 @@
         "README.md",
         "screenshot.gif"
     ],
+	"engines" : {
+		"node" : ">=15.0.0"
+	},
     "author": "James Hunt <10615884+thetwopct@users.noreply.github.com>",
     "license": "ISC",
     "repository": {
