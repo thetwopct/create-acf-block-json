@@ -31,7 +31,7 @@ $align = ( empty( $block['align'] ) ) ? '' : 'align' . $block['align'];
 
 $align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
 
-$full_height = ( empty( $block['full_height'] ) ) ? '' : 'has-full-height';
+$anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
 
 $additional_classes = $block['className'] ?? '';
 
@@ -42,15 +42,13 @@ $all_classes = array(
 	$font_size,
 	$align,
 	$align_text,
-	$full_height,
 	$additional_classes,
-	'', // You can add more classes, one per line.
 );
 
 $classes = implode( ' ', $all_classes );
 ?>
 
-<div class="<?php echo esc_attr( $classes ); ?>">
+<div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $classes ); ?>">
 	<h2 class="wp-block-DX9S-QWY">Welcome to your ACF block.</h2>
 	<p>Open the blocks PHP file to edit this text.</p>
 	<?php
