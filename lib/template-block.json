@@ -19,6 +19,7 @@
         "renderTemplate": ""
     },
     "supports": {
+		"mode": false,
         "align": [
             "wide",
             "full",
