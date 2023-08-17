@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/block.json",
-    "apiVersion": 2,
+    "apiVersion": 3,
     "name": "",
     "title": "",
     "description": "",
@@ -20,6 +20,7 @@
     },
     "supports": {
 		"mode": false,
+        ""
         "align": [
             "wide",
             "full",
@@ -31,14 +32,19 @@
         "alignContent": false,
         "alignText": false,
         "anchor": true,
+        "className": true,
         "color": {
             "background": false,
             "gradients": false,
             "link": false,
-            "text": false
+            "text": false,
+            "enableContrastChecker": false
         },
-        "fullHeight": false,
+        "customClassName": false,
+        "defaultStylePicker": true,
         "html": false,
+        "multiple": true,
+        "reusable": true,
         "spacing": {
             "margin": false,
             "padding": false
