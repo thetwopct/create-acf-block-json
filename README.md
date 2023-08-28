@@ -34,7 +34,18 @@ It will generate:
 
 The script handles generating a unique class (.wp-block-namespace-name) for your block which is then referenced in each file.
 
-This script doesn't handle registration of the block - we recommend directory scanning methods to auto load blocks without registering each one. This method is outlined by [Bill Erickson](https://www.billerickson.net/building-acf-blocks-with-block-json/#advanced-usage), but there are [other examples](https://github.com/cncf/cncf.io/blob/0233ccfa1fb24d46ce119049b010a18a0e3d91d3/web/wp-content/themes/cncf-twenty-two/includes/acf.php#L19) online. But if you need an easier solution to register an ACF block, [follow this guide](https://www.advancedcustomfields.com/resources/how-to-upgrade-a-legacy-block-to-block-json-with-acf-6/). FYI, many guides are out of date, make sure you use guides released after 28th September 2022 (when ACF 6.0 was released) which will properly use block.json.
+This script doesn't handle registration of the block - we recommend directory scanning methods to auto load blocks without registering each one. This method is outlined by [Bill Erickson](https://www.billerickson.net/building-acf-blocks-with-block-json/#advanced-usage), but there are [other examples](https://github.com/cncf/cncf.io/blob/0233ccfa1fb24d46ce119049b010a18a0e3d91d3/web/wp-content/themes/cncf-twenty-two/includes/acf.php#L19) online. This blog post by ACF also talks about how to register an ACF block, [follow this guide](https://www.advancedcustomfields.com/resources/how-to-upgrade-a-legacy-block-to-block-json-with-acf-6/). FYI, many guides are out of date, make sure you use guides released after 28th September 2022 (when ACF 6.0 was released) which will properly use block.json. If you want a very quick bit of PHP to register your new block, you can use this:
+
+```
+/**
+ * Load My Create ACF Block JSON Blocks
+ */
+function thetwopct_load_acf_blocks() {
+        register_block_type( get_template_directory() . '/blocks/my-acf-block/block.json' );
+      // register_block_type( get_template_directory() . '/blocks/another-block/block.json' );
+}
+add_action( 'init', 'thetwopct_load_acf_blocks' );
+````
 
 ## Customisation Options
 
