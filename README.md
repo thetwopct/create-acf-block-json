@@ -26,7 +26,7 @@ Create ACF Block JSON is an npm package command line program that will create a 
 
 It will generate:
 
-- Folder - containg folder for your block.
+- Folder - containing folder for your block.
 - block.json - prefilled with common block information and default values.
 - PHP file - setup with basic information, classes and innerblocks.
 - SCSS files - for the frontend and editor. SCSS is useful if you use a compiler to output CSS files.
