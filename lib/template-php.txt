@@ -12,9 +12,8 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-// Block Name (sluggified).
+// Block Name (sluggified) and namespace.
 $block_name = 'QWY';
-
 $namespace = 'DX9S';
 
 // Create full block name to use in classes.
@@ -24,15 +23,10 @@ $block_name = 'wp-block-' . $namespace . '-' . $block_name;
 $background = ( empty( $block['backgroundColor'] ) ) ? '' : 'has-' . $block['backgroundColor'] . '-background-color';
 
 $has_background = $background ? 'has-background' : '';
-
 $font_size = ( empty( $block['fontSize'] ) ) ? '' : 'has-' . $block['fontSize'] . '-font-size';
-
 $align = ( empty( $block['align'] ) ) ? '' : 'align' . $block['align'];
-
 $align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
-
 $anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
-
 $additional_classes = $block['className'] ?? '';
 
 $all_classes = array(
@@ -45,7 +39,7 @@ $all_classes = array(
 	$additional_classes,
 );
 
-$classes = implode( ' ', $all_classes );
+$classes = trim( implode( ' ', $all_classes ) );
 ?>
 
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $classes ); ?>">
