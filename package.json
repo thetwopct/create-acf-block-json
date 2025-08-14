@@ -1,7 +1,7 @@
 {
     "name": "create-acf-block-json",
     "description": "Quickly create an a new WordPress Block that uses Advanced Custom Fields (ACF) and utilised block.json and block-specific CSS.",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "main": "./lib/create-acf-block-json.js",
     "bin": {
         "create-acf-block-json": "./bin/index.js"
