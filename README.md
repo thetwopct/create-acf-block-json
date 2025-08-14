@@ -6,6 +6,8 @@ If you use ACF and make Gutenberg blocks, this simple utility should save you ti
 
 <img src="screenshot.gif" width="630">
 
+Minimum supported WordPress version: 6.5
+
 ## Quick Start
 
 Install globally via npm:
@@ -57,6 +59,21 @@ When you run `create-acf-block-json` you are asked a few questions before your b
 - Icon: The icon for your block - use any [Dashicons](https://developer.wordpress.org/resource/dashicons/) name (defaults to icon `star-filled`). Note, when copying the name of the Dashicon you must remove the prefix `dashicons-`, for example: `dashicons-smiley` should be written as `smiley`.
 
 The script will then generate all required files. From there, you can edit, delete, remove the files as you wish.
+
+## Customising your block options via block.json
+
+The package creates a block.json for you to customise your block. We declare all features with their defaults ready for you to set the block up as you need. Consult the [Block Supports API](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-supports/) for more information on each setting.
+
+## How to access the Block Supports setting and include them?
+
+We include some examples in the main PHP file in the block. You can access other settings by accessing the setting on the $block array. Be aware that some settings need additional claseses to properly work (see background). For example:
+
+```php
+$font_size = ( empty( $block['fontSize'] ) ) ? '' : 'has-' . $block['fontSize'] . '-font-size';
+$align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
+$background = ( empty( $block['backgroundColor'] ) ) ? '' : 'has-' . $block['backgroundColor'] . '-background-color';
+$has_background = $background ? 'has-background' : null;
+```
 
 ## Install Create ACF Block
 

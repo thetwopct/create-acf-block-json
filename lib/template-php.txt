@@ -12,32 +12,20 @@
  * @param   (int|string) $post_id The post ID this block is saved to.
  */
 
-// Block Name (sluggified) and namespace.
-$block_name = 'QWY';
+// Create full block name from namespace and block name (sluggified).
 $namespace = 'DX9S';
-
-// Create full block name to use in classes.
+$block_name = 'QWY';
 $block_name = 'wp-block-' . $namespace . '-' . $block_name;
-
-// setup various classes sent through from $block.
-$background = ( empty( $block['backgroundColor'] ) ) ? '' : 'has-' . $block['backgroundColor'] . '-background-color';
-
-$has_background = $background ? 'has-background' : '';
-$font_size = ( empty( $block['fontSize'] ) ) ? '' : 'has-' . $block['fontSize'] . '-font-size';
+// Handle Block Settings coming from $block.
 $align = ( empty( $block['align'] ) ) ? '' : 'align' . $block['align'];
-$align_text = ( empty( $block['align_text'] ) ) ? '' : 'has-text-align-' . $block['align_text'];
 $anchor = ( empty( $block['anchor'] ) ) ? null : 'id=' . $block['anchor'];
 $additional_classes = $block['className'] ?? '';
 
-$all_classes = array(
+$all_classes = array_filter( array(
 	$block_name,
-	$background,
-	$has_background,
-	$font_size,
 	$align,
-	$align_text,
 	$additional_classes,
-);
+) );
 
 $classes = trim( implode( ' ', $all_classes ) );
 ?>
@@ -45,7 +33,5 @@ $classes = trim( implode( ' ', $all_classes ) );
 <div <?php echo esc_attr( $anchor ); ?> class="<?php echo esc_attr( $classes ); ?>">
 	<h2 class="wp-block-DX9S-QWY">Welcome to your ACF block.</h2>
 	<p>Open the blocks PHP file to edit this text.</p>
-	<?php
-		echo '<InnerBlocks />';
-	?>
+	<InnerBlocks />
 </div>

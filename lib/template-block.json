@@ -53,7 +53,7 @@
 			"gradients": false,
 			"heading": false,
 			"link": false,
-			"text": false
+			"text": true
         },
         "customClassName": true,
         "defaultStylePicker": false,
