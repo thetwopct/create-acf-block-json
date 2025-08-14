@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
-const pkg = require("../package.json");
+const path = require("path");
+const pkg = require(path.join(__dirname, "../package.json"));
 
 const args = process.argv.slice(2);
 
