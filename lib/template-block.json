@@ -70,17 +70,6 @@
 			"clientNavigation": false,
 			"interactive": false
 		},
-		"layout": {
-			"default": null,
-			"allowSwitching": false,
-			"allowEditing": true,
-			"allowInheriting": true,
-			"allowSizingOnChildren": false,
-			"allowVerticalAlignment": true,
-			"allowJustification": true,
-			"allowOrientation": true,
-			"allowCustomContentAndWideSize": true
-		},
 		"lock": false,
         "multiple": true,
 		"position": {
