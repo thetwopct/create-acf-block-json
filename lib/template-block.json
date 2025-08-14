@@ -18,6 +18,14 @@
         "mode": "preview",
         "renderTemplate": ""
     },
+	"allowedBlocks": [],
+	"attributes": {
+		"variable": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"example": {},
     "supports": {
 		"mode": false,
         "align": [
@@ -31,33 +39,68 @@
         "alignContent": false,
         "alignText": false,
         "anchor": true,
-        "className": true,
+		"ariaLabel": false,
+		"background": {
+			"backgroundImage": false,
+			"backgroundSize": false,
+			"backgroundPosition": false
+		},
+        "className": false,
         "color": {
-            "background": false,
-            "gradients": false,
-            "link": false,
-            "text": false,
-            "enableContrastChecker": false
+			"background": false,
+			"button": false,
+			"enableContrastChecker": false,
+			"gradients": false,
+			"heading": false,
+			"link": false,
+			"text": false
         },
-        "customClassName": false,
-        "defaultStylePicker": true,
+        "customClassName": true,
+        "defaultStylePicker": false,
+		"dimensions": {
+			"aspectRatio": false,
+			"minHeight": false
+		},
+		"filter": {
+			"duotone": false
+		},
         "html": false,
+		"inserter": true,
+		"interactivity": {
+			"clientNavigation": false,
+			"interactive": false
+		},
+		"layout": {
+			"default": null,
+			"allowSwitching": false,
+			"allowEditing": true,
+			"allowInheriting": true,
+			"allowSizingOnChildren": false,
+			"allowVerticalAlignment": true,
+			"allowJustification": true,
+			"allowOrientation": true,
+			"allowCustomContentAndWideSize": true
+		},
+		"lock": false,
         "multiple": true,
-        "reusable": true,
+		"position": {
+			"sticky": false
+		},
+		"renaming": false,
+        "reusable": false,
+		"shadow": false,
         "spacing": {
             "margin": false,
-            "padding": false
+            "padding": false,
+            "blockGap": false
         },
+		"splitting": false,
         "typography": {
             "fontSize": false,
-            "lineHeight": false
+            "lineHeight": false,
+            "textAlign": false
         }
     },
-    "attributes": {
-        "variable": {
-            "type": "string",
-            "default": ""
-        }
-    },
-    "example": {}
+	"styles": [{}],
+	"variations": [{}]
 }
